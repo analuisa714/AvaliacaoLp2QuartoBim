@@ -1,0 +1,8 @@
+- O método doGet tem por finalidade recuperar e processar as requisições feitas pelo cliente, nas quais foram usadas o método doGet.  Assinatura do método doGet:
+
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+
+
+- O método doPost tem por finalidade recuperar e processar as requisições feitas pelo cliente, nas quais foram usadas o método doPost. Normalmente ele é utilizado quando as informações enviadas precisam ser tratadas com mais segurança. Assinatura do método doPost:
+
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
