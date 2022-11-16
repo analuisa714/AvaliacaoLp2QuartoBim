@@ -1,0 +1,13 @@
+Os objetos da classe Servlet possuem um ciclo de vida constituído por três métodos, são eles:
+
+- primeiro o método init, o qual tem por responsabilidade inicializar o servlet e por isso ele só é chamado uma vez, ou seja, quando o servlet é criado. E ele possui a seguinte assinatura:
+
+public void init(ServletConfig config) throws ServletException
+
+
+- depois, temos o método service que é utilizado para acessar a solicitação de um cliente, e tem a seguinte assinatura:
+
+public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException
+
+
+- e por fim, temos o método destroy(), que encerra o ciclo de vida de um servlet e libera espaço em memória. Geralmente ele é invocado quando todas as sequências dentro do método service() forem finalizadas.
